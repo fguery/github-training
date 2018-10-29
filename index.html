@@ -3,5 +3,19 @@
         <link rel="stylesheet" href="style/main.css" />
     </head>
     <body>
-</body>
+        <div class="siema">
+          <div class="blue">Hi, I'm slide 1</div>
+          <div class="green">Hi, I'm slide 2</div>
+          <div class="yellow">Hi, I'm slide 3</div>
+          <div class="red">Hi, I'm slide 4</div>
+        </div>
+        <script type="text/javascript" src="js/sierna/sierna.min.js"></script>
+        <script type="text/javascript">
+            var siema = new Siema({
+              duration: 250,
+              loop: true
+            });
+            setInterval(() => siema.next(), 1000)
+        </script>
+    </body>
 </html>
